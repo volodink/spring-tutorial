@@ -1,11 +1,8 @@
 package edu.penzgtu.springtutorial.controller;
 
 import edu.penzgtu.springtutorial.dto.HelloDTO;
-import io.swagger.v3.oas.annotations.OpenAPIDefinition;
 import io.swagger.v3.oas.annotations.Operation;
-import io.swagger.v3.oas.annotations.info.Info;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.tags.Tags;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
@@ -24,6 +21,6 @@ public class HelloController {
     @GetMapping("/")
     @Operation(summary = "Returns text")
     public String root() {
-        return String.format("{\"param\": \"Hello!\"}");
+        return "{\"param\": \"Hello!\"}";
     }
 }
