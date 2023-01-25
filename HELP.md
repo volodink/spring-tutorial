@@ -1,8 +1,3 @@
-# Read Me First
-The following was discovered as part of building this project:
-
-* The original package name 'edu.penzgtu.spring-tutorial' is invalid and this project uses 'edu.penzgtu.springtutorial' instead.
-
 # Getting Started
 
 ### Reference Documentation
@@ -24,4 +19,24 @@ The following guides illustrate how to use some features concretely:
 These additional references should also help you:
 
 * [Gradle Build Scans – insights for your project's build](https://scans.gradle.com#gradle)
+
+# Запуск проекта
+
+Для непрерывной сборки проекта без постоянного запуска:
+
+```bash
+    gradle build -continuous
+```
+
+Для запуска сервиса:
+
+```bash
+    gradle bootRun
+```
+
+Проверяем работоспособность:
+
+```bash
+    open http://localhost:8080/hello
+```
 
